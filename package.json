@@ -1,7 +1,7 @@
 {
   "name": "@serialport/bindings-cpp",
   "description": "SerialPort Hardware bindings for node serialport written in c++",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "keywords": [
@@ -57,6 +57,7 @@
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig-build.json",
     "install": "node-gyp-build",
+    "postinstall": "tsc -p tsconfig-build.json",
     "prebuildify": "prebuildify --napi --target 14.0.0 --force --strip --verbose",
     "prebuildify-cross": "prebuildify-cross --napi --target 14.0.0 --force --strip --verbose",
     "rebuild": "node-gyp rebuild",
