@@ -1,3 +1,4 @@
+#define NOMINMAX
 #include "./serialport.h"
 #include "./serialport_win.h"
 #include <napi.h>

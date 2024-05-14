@@ -6,7 +6,6 @@
 #include <list>
 #include <string>
 
-#define NOMINMAX
 #define ERROR_STRING_SIZE 1088
 
 static inline HANDLE int2handle(int ptr) {
