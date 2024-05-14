@@ -5,6 +5,7 @@
 #endif
 
 #ifdef WIN32
+  #define NOMINMAX
   #define strncasecmp strnicmp
   #include "./serialport_win.h"
 #else
