@@ -56,10 +56,9 @@
   },
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig-build.json",
-    "install": "node-gyp-build",
-    "prebuildify": "prebuildify --napi --target 14.0.0 --force --strip --verbose",
-    "prebuildify-cross": "prebuildify-cross --napi --target 14.0.0 --force --strip --verbose",
-    "rebuild": "node-gyp rebuild",
+    "postinstall": "node-gyp build",
+    "prebuildify": "prebuildify --napi --target 20.13.1 --force --strip --verbose",
+    "prebuildify-cross": "prebuildify-cross --napi --target 20.13.1 --force --strip --verbose",
     "format": "eslint lib test bin --fix",
     "lint": "eslint lib test bin && cc --verbose",
     "test": "nyc --reporter lcov --reporter text mocha",
